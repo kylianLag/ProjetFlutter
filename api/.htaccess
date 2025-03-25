@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /apflutter/api/
+
+# Réécritures pour rediriger les requêtes vers le fichier API
+RewriteRule ^praticiens$ api.php [L]
+RewriteRule ^praticiens/([0-9]+)$ api.php [L]
+RewriteRule ^praticiens/([0-9]+)/notes$ api.php [L]
